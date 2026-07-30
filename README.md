@@ -1,6 +1,6 @@
 # Expenses Application - made with Lovable & Claude Code
 
-An expenses claim web app built with Lovable and Claude Code, published as the open demo repository for [Quality Clouds Hub](https://portal.qualityclouds.ai).
+An expenses claim web app built with Lovable and Claude Code, published as the open demo repository for [Norma](https://portal.qualityclouds.ai).
 
 AI built this app. We scanned it with our own product. The results are below, unedited.
 
@@ -19,7 +19,7 @@ AI built this app. We scanned it with our own product. The results are below, un
 
 63 findings across 73 rules and 5 rulesets, activated automatically against the detected stack. The score is diagnostic: it tells you what needs attention before this code reaches production, it doesn't block anything.
 
-The headline: an app that looks finished and runs fine in a preview still failed Performance outright, and 41 of the 63 findings are high severity. That gap between "it works" and "it's production ready" is the reason Quality Clouds Hub exists.
+The headline: an app that looks finished and runs fine in a preview still failed Performance outright, and 41 of the 63 findings are high severity. That gap between "it works" and "it's production ready" is the reason Norma exists.
 
 ## Why this repo is public
 
@@ -29,7 +29,7 @@ Everything here is exactly as the AI tools produced it: Lovable generated the ap
 
 ## Try it yourself
 
-Every new Quality Clouds Hub workspace includes this project's scan results, so you can explore the findings without touching any code. To fix issues and re-scan:
+Every new Norma workspace includes this project's scan results, so you can explore the findings without touching any code. To fix issues and re-scan:
 
 1. **Fork this repo.**
 2. **Sign up at [portal.qualityclouds.ai](https://portal.qualityclouds.ai)** if you haven't already. The free tier is permanent: 1 certificate a month, no credit card.
@@ -39,10 +39,10 @@ Every new Quality Clouds Hub workspace includes this project's scan results, so 
 
 ## Stack
 
-Lovable's default output: React, TypeScript, Vite and Tailwind. Quality Clouds Hub detected the stack and picked the rulesets automatically; the same works for any stack, whichever tool or model wrote the code.
+Lovable's default output: React, TypeScript, Vite and Tailwind. Norma detected the stack and picked the rulesets automatically; the same works for any stack, whichever tool or model wrote the code.
 
-## About Quality Clouds Hub
+## About Norma
 
-Quality Clouds Hub scores AI-generated code across six areas (Security, Performance, Maintainability, Scalability, Manageability, Architecture) and gives you the fixes, built on 9 years of governance data from 950+ enterprise platform instances.
+Norma scores AI-generated code across six areas (Security, Performance, Maintainability, Scalability, Manageability, Architecture) and gives you the fixes, built on 9 years of governance data from 950+ enterprise platform instances.
 
 Start free at [portal.qualityclouds.ai](https://portal.qualityclouds.ai).
