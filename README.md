@@ -60,9 +60,9 @@ Livecheck results on two files from this repo (October 2026). Same file, same ru
 
 **On pull requests.** Install the [Norma GitHub App](https://github.com/apps/norma-by-quality-clouds) on your fork, then open a pull request with a fix. Norma checks the pull request and posts its findings as a review comment. The App asks for one permission, read and write on pull requests. It comments; it can't push code or merge.
 
-**In your AI coding agent.** Norma is an MCP server, so Claude Code, Cursor, Windsurf, Codex and any MCP client can check files while they write them. Livecheck through MCP only runs on a linked repository, so the setup has one extra step before the first check:
+**In your AI coding agent.** Norma is an MCP server, so Claude Code, Cursor, Windsurf, Codex and any MCP client can check files while they write them. Livecheck through MCP only runs on a repository linked in your Norma account:
 
-1. **Connect your fork in the Norma app** (step 3 above). The MCP server can only link repositories your organization has already connected through GitHub or Bitbucket.
+1. **Link your fork in Norma** (step 3 above). Your code is never stored in your Norma account: linking tells Norma which repository a check belongs to, and Livecheck holds file content in memory only for the duration of the check.
 2. **Add the server.** In Claude Code:
 
    ```bash
@@ -70,10 +70,9 @@ Livecheck results on two files from this repo (October 2026). Same file, same ru
    ```
 
    Sign in with OAuth when prompted.
-3. **Link the workspace.** Open the agent in your local clone of the fork and ask: *"Link this repository to Norma."* The agent calls `link_repository` with the clone's git remote. You only do this once per workspace.
-4. **Check and fix.** Ask the agent to fix a finding, for example: *"Use Norma to live check src/lib/admin-client.ts, fix the violations, and re-check until it's clean."*
+3. **Check and fix.** Open the agent in your local clone of the fork and ask it to fix a finding, for example: *"Use Norma to live check src/lib/admin-client.ts, fix the violations, and re-check until it's clean."*
 
-If Livecheck answers that the repository isn't linked, make sure the fork shows up in the Norma app and that `git remote get-url origin` points at that fork, then run step 3 again. Norma is also in the Claude connectors directory and on [Smithery](https://smithery.ai/servers/qualityclouds/norma); the same linking step applies whichever way you install it.
+If Livecheck says the repository isn't linked, make sure the fork shows up in your Norma account and that `git remote get-url origin` points at that fork. Norma is also in the Claude connectors directory and on [Smithery](https://smithery.ai/servers/qualityclouds/norma); the repository has to be linked whichever way you install it.
 
 **In your editor.** The VS Code extension [Norma: AI Code Governance](https://marketplace.visualstudio.com/items?itemName=qualityclouds.norma-for-vscode) runs Livecheck on the active file and puts findings in the Problems panel. It also runs on Cursor and VSCodium through Open VSX.
 
